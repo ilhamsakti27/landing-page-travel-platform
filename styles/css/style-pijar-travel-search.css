@@ -1,0 +1,690 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  font-family: "Rubik", sans-serif;
+  color: #49494b;
+}
+
+body {
+  width: 1440;
+  display: grid;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background-color: #fff;
+  margin-bottom: 46px;
+}
+
+.white {
+  color: #fff;
+}
+
+.bold {
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.search-input {
+  width: 380px;
+  border: none;
+}
+
+.search-input::placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #acacac;
+  text-align: center;
+}
+
+.search-symbol {
+  border: none;
+}
+
+.search-nav {
+  border-bottom: 2px solid #acacac;
+}
+
+.nav {
+  background: #fe3838;
+  border-radius: 8px;
+  width: 89px;
+  height: 35px;
+}
+
+#nav-sign-up a {
+  text-decoration: none;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#nav-log-in {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #49494b;
+  text-decoration: none;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  box-sizing: border-box;
+  column-gap: 20px;
+}
+
+/* card promo */
+.card-home {
+  background-image: url(../../images/hotel-resorts.png);
+  background-size: cover;
+  filter: drop-shadow(2px 4px 40px rgba(59, 62, 65, 0.62));
+  border-radius: 40px;
+  width: 100%;
+  height: 532px;
+  margin-top: 34px;
+  padding: 97px 138px;
+  color: #fff;
+  z-index: 1022;
+}
+
+#promo-id {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 118.5%;
+  text-align: left;
+}
+
+#promo-explain {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 136%;
+  text-align: left;
+}
+
+#promo-location {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 136%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#logo-location {
+  margin-right: 10px;
+}
+
+#promo-disc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 118.5%;
+  text-align: left;
+  margin-top: 30px;
+}
+
+#promo-disc1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 118.5%;
+}
+
+#disc {
+  font-size: 100px;
+  color: #fff;
+}
+
+.promo-detail {
+  background-color: #fff;
+  box-shadow: 4px 4px 8px rgba(211, 220, 233, 0.027);
+  border-radius: 24px;
+  width: 100%;
+  height: 156px;
+  left: 0px;
+  color: #49494b;
+  padding: 18px 24px;
+  z-index: 900;
+}
+
+.promo-detail-header {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 136%;
+  text-align: left;
+}
+
+.promo-desc {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 136%;
+  text-align: left;
+}
+
+.promo-desc img,
+.promo-desc-bold img {
+  margin-right: 16px;
+}
+
+.promo-desc-bold {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 136%;
+  text-align: left;
+}
+
+.col-line {
+  border-right: 2px solid #acacac;
+  height: 110px;
+}
+
+.search-btn {
+  width: 192px;
+  height: 53px;
+  background: #fe3838;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 136%;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn:hover,
+#search:hover,
+#search-label:hover {
+  cursor: pointer;
+}
+
+.search-btn label {
+  color: #fff;
+}
+
+#search {
+  display: none;
+}
+
+.art {
+  margin-top: 172px;
+}
+
+.pad {
+  padding: 0 200px;
+}
+
+.gap {
+  margin-top: 60px;
+}
+
+.gap-parag {
+  margin-top: 32px;
+}
+
+.gap-title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.pad h1 {
+  text-align: center;
+}
+
+.desc-parag {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 136%;
+  margin-top: 32px;
+}
+
+.pad img {
+  margin-top: 0;
+}
+
+.member-card {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+}
+/* card */
+
+.container-favorite {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  width: 90vw;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container-favorite::-webkit-scrollbar {
+  display: none;
+}
+
+.favorite {
+  width: 100vw;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 5rem;
+  grid-gap: 20rem;
+}
+
+.card {
+  width: 377px;
+  border: none;
+  display: inline-block;
+  margin-right: 52px;
+  box-shadow: 4px 4px 40px rgba(189, 205, 225, 0.4);
+  border-radius: 32px;
+  transition: all 0.2s ease-in;
+}
+
+.rating {
+  position: absolute;
+  top: 364px;
+  left: 18px;
+}
+
+.card-img {
+  width: 375px;
+  height: 406px;
+  border-radius: 32px;
+}
+
+.rate {
+  width: 28px;
+  height: 28px;
+}
+
+.like {
+  margin-left: 240px;
+}
+
+.rate-number {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 136%;
+  color: #fff;
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 136%;
+}
+
+.card-loc {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 136%;
+}
+
+.card-loc span {
+  font-weight: 500;
+}
+
+.card-desc {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 136%;
+}
+
+.card-cost {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 136%;
+  color: #fe3838;
+}
+
+.card-value {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 136%;
+  color: #acacac;
+  margin-left: 9px;
+}
+
+.slide-label {
+  margin-top: 34px;
+}
+
+.slide-label ul {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-label ul li {
+  display: inline-block;
+  border: 1px solid #fe3838;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.on-slide-label {
+  background-color: #fe3838;
+}
+
+/* Partnership */
+#pijar-partner {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Pijar Travel Excellence */
+.excell {
+  display: flex;
+  align-items: center;
+}
+
+.excell img {
+  width: 187px;
+  height: 187px;
+}
+
+.excell-img {
+  margin-right: 48px;
+}
+
+.excell p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 136%;
+  width: 80%;
+}
+
+#excell-loc {
+  float: right;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* footer */
+footer {
+  margin-top: 91px;
+  background: #fe3838;
+  border-radius: 16px 16px 0px 0px;
+  padding: 72px 17px 23px 50px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.con > p,
+.con > h5,
+.con > span {
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.con > h5 {
+  font-weight: 700;
+}
+
+.logo-brand {
+  width: 50%;
+  margin-bottom: 42px;
+}
+
+.google-play-app-store {
+  margin-right: 17px;
+}
+
+.container-1 {
+  width: 30%;
+}
+
+.container-2 {
+  width: 30%;
+  padding-right: 100px;
+}
+
+.container-3 {
+  width: 10%;
+}
+
+.container-4 {
+  width: 30%;
+}
+
+.contact {
+  display: flex;
+  margin-top: 72px;
+  margin-bottom: 76px;
+  justify-content: center;
+}
+
+.contact > img {
+  margin: 0 15px;
+}
+
+.footer-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 136%;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* recomendation */
+.frame-close {
+  position: absolute;
+  z-index: -1;
+  top: -1000px;
+}
+
+.frame-open {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding: 150px 40px 40px 40px;
+  box-shadow: 4px 4px 20px rgba(189, 205, 225, 0.4);
+  border-radius: 40px;
+  height: 900px;
+  width: 100%;
+}
+
+.active {
+  height: 1000px;
+  background-color: #000;
+}
+
+.column {
+  border: 1px solid #000;
+}
+
+.card-filter {
+  box-shadow: 4px 4px 20px rgba(189, 205, 225, 0.4);
+  border-radius: 8px;
+  padding: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.card-filter > p {
+  margin: 0 auto;
+  margin-left: 10%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 136%;
+  color: #acacac;
+}
+
+.card-filter > p img {
+  margin-right: 10px;
+}
+
+.aye {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.black > p {
+  color: #49494b;
+}
+
+.map {
+  padding: 17px 10px 12px 10px;
+  box-shadow: 4px 4px 20px rgba(189, 205, 225, 0.4);
+  border-radius: 8px;
+}
+
+.map > p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 136%;
+  text-align: center;
+}
+
+.map > img {
+  width: 100%;
+}
+
+.box-recommendation {
+  padding: 8px;
+  height: 680px;
+  overflow: auto;
+}
+
+.box-recommendation::-webkit-scrollbar {
+  display: none;
+}
+.card-recommendation {
+  box-shadow: 4px 4px 20px rgba(189, 205, 225, 0.4);
+  border-radius: 16px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.image-of-resorts {
+  width: 100%;
+}
+
+.card-rec-pad {
+  margin-right: 4px;
+}
+
+.card-rec-pad-1 {
+  margin-right: 10px;
+}
+
+.card-rec-loc {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 136%;
+  color: #000000;
+}
+
+.card-rec-rat {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 136%;
+  color: #49494b;
+}
+
+.card-rec-desc {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 136%;
+  color: #49494b;
+}
+
+.det {
+  text-align: right;
+}
+
+.room {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 136%;
+  text-align: right;
+  color: #acacac;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 136%;
+  color: #49494b;
+  text-decoration: line-through;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.price-disc {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 136%;
+  color: #fe3838;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.room-1 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 136%;
+  color: #acacac;
+}

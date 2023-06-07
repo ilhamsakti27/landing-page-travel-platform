@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pijar Travel</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/css/style-pijar-travel-search.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="images/Logo PTravel-2.svg" alt="" logo pijar travel /></a>
+          <form class="d-flex search-nav" role="search">
+            <input class="form-control me-2 search-input" type="search" placeholder="Booking . Destination . FAQ" aria-label="Search" />
+            <button class="btn btn-outline-success search-symbol" type="submit"><img src="images/search-symbol-2.svg" alt="search symbol" /></button>
+          </form>
+          <div class="grid-container">
+            <div class="grid">
+              <a href="#" id="nav-log-in">Log in</a>
+            </div>
+            <div class="nav grid" id="nav-sign-up">
+              <a href="#">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="card-home container">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-sm-8">
+                <h1 class="white" id="promo-id">Discover new destination.</h1>
+                <p class="white" id="promo-explain">to get the best of your adventure you just need to leave and go where you like. We are waiting for you.</p>
+                <span class="white" id="promo-location"><img id="logo-location" src="images/location-symbol.svg" />Bali, <strong class="white bold"> Indonesia</strong></span>
+              </div>
+              <div class="col-sm-4">
+                <h3 class="white" id="promo-disc">Disc up to</h3>
+                <h1 class="white" id="promo-disc1">50<span id="disc">%</span></h1>
+              </div>
+              <div class="promo-detail">
+                <div class="row align-items-start">
+                  <div class="col col-line">
+                    <h3 class="promo-detail-header">Location</h3>
+                    <p class="promo-desc"><img src="images/location-symbol-2.svg" alt="location hotel"> Jakarta, <span class="promo-desc-bold">Indonesia</span></p>
+                  </div>
+                  <div class="col col-line">
+                    <h3 class="promo-detail-header">Date</h3>
+                    <p class="promo-desc-bold"><img src="images/calendar-symbol.svg" alt="promo date"> 1 Agt 2021 - 7 Agt 2022</p>
+                  </div>
+                  <div class="col">
+                    <h3 class="promo-detail-header">Guest & Room</h3>
+                    <p class="promo-desc-bold"><img src="images/add-guest-symbol.svg" alt="promo date"> 1 guest - 1 room</p>
+                  </div> 
+                </div>
+                <div class="search-btn">
+                  <input type="checkbox" id="search">
+                  <label for="search" class="label" id="search-label">Search</label>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="container frame-open frame-close">
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h3>Filter</h3>
+              <div class="card-filter">
+                <p><img src="images/icon_pricetag-outline.svg" alt="icon price tag">Price</p>
+              </div>
+              <div class="card-filter">
+                <p><img src="images/icon_location.svg" alt="icon location">Area</p>
+              </div>
+              <div class="card-filter">
+                <p><img src="images/icon_star.svg" alt="icon star">Hotel Star</p>
+              </div>
+              <div class="card-filter aye black">
+                <p>Most Searched <img src="images/icon_drop-menu.svg" alt="icon drop menu"></p>
+              </div>
+              <div class="card-filter black">
+                <p>Short by</p>
+                <img src="images/icon_drop-menu.svg" alt="icon drop menu">
+              </div>
+              <div class="map black">
+                <p>Map</p>
+                <img src="images/map.png" alt="map">
+              </div>
+            </div>
+            <div class="col">
+              <h3>Recommendation</h3>
+              <div class="box-recommendation">
+                <article class="container card-recommendation">
+                  <div class="row">
+                    <div class="col-4">
+                      <img class="image-of-resorts" src="images/hotel-sentral-cawang-jakarta.png" alt="hotel-sentral-cawang-jakarta">
+                    </div>
+                    <div class="col">
+                      <h3>Hotel Sentral Cawang Jakarta</h3>
+                      <p class="card-rec-loc"><img class="card-rec-pad" src="images/location-symbol-2.svg" alt="icon location"> Kramat Jati, Jakarta Timur</p>
+                      <p class="card-rec-rat"><img class="card-rec-pad-1" src="images/star-symbol.png" alt="icon star">4.5</p>
+                      <p class="card-rec-desc">With Turtle Beach reachable in 300 metres, Ocean Villas at Turtle Bay offers accommodation, a restaurant...</p>
+                    </div>
+                    <div class="col-2 det">
+                      <img src="images/icon_thumb.svg" alt="icon thumb">
+                      <p class="room">Rest of the room</p>
+                      <p class="room">5</p>
+                      <p class="price">IDR 390.000</p>
+                      <p class="price-disc">IDR 350.000</p>
+                      <p class="room-1">per room per night</p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="container card-recommendation">
+                  <div class="row">
+                    <div class="col-4">
+                      <img class="image-of-resorts" src="images/artotel-Suites-mangkuluhur-jakarta.png" alt="artotel-Suites-mangkuluhur-jakarta">
+                    </div>
+                    <div class="col">
+                      <h3>Artotel Suites Mangkuluhur Jakarta</h3>
+                      <p class="card-rec-loc"><img class="card-rec-pad" src="images/location-symbol-2.svg" alt="icon location"> Setiabudi, Jakarta</p>
+                      <p class="card-rec-rat"><img class="card-rec-pad-1" src="images/star-symbol.png" alt="icon star">5</p>
+                      <p class="card-rec-desc">With Turtle Beach reachable in 300 metres, Ocean Villas at Turtle Bay offers accommodation, a restaurant...</p>
+                    </div>
+                    <div class="col-2 det">
+                      <img src="images/icon_thumb.svg" alt="icon thumb">
+                      <p class="room">Rest of the room</p>
+                      <p class="room">5</p>
+                      <p class="price">IDR 980.000</p>
+                      <p class="price-disc">IDR 950.000</p>
+                      <p class="room-1">per room per night</p>
+                    </div>
+                  </div>
+                </article>
+            
+                <article class="container card-recommendation">
+                  <div class="row">
+                    <div class="col-4">
+                      <img class="image-of-resorts" src="images/yuan-garden-pasar-baru.png" alt="yuan-garden-pasar-baru">
+                    </div>
+                    <div class="col">
+                      <h3>Yuan Garden Pasar Baru</h3>
+                      <p class="card-rec-loc"><img class="card-rec-pad" src="images/location-symbol-2.svg" alt="icon location"> Sawah Besar, Jakarta Pusat</p>
+                      <p class="card-rec-rat"><img class="card-rec-pad-1" src="images/star-symbol.png" alt="icon star"> 4.5</p>
+                      <p class="card-rec-desc">With Turtle Beach reachable in 300 metres, Ocean Villas at Turtle Bay offers accommodation, a restaurant...</p>
+                    </div>
+                    <div class="col-2 det">
+                      <img src="images/icon_thumb.svg" alt="icon thumb">
+                      <p class="room">Rest of the room</p>
+                      <p class="room">5</p>
+                      <p class="price">IDR 980.000</p>
+                      <p class="price-disc">IDR 950.000</p>
+                      <p class="room-1">per room per night</p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="container card-recommendation">
+                  <div class="row">
+                    <div class="col-4">
+                      <img class="image-of-resorts" src="images/ASTON-kartika-grogol-hotel-conference-center.png" alt="ASTON-kartika-grogol-hotel-conference-center">
+                    </div>
+                    <div class="col">
+                      <h3>ASTON Kartika Grogol Hotel & Conference Center</h3>
+                      <p class="card-rec-loc"><img class="card-rec-pad" src="images/location-symbol-2.svg" alt="icon location"> Grogol, Jakarta Barat</p>
+                      <p class="card-rec-rat"><img class="card-rec-pad-1" src="images/star-symbol.png" alt="icon star"> 4.5</p>
+                      <p class="card-rec-desc">With Turtle Beach reachable in 300 metres, Ocean Villas at Turtle Bay offers accommodation, a restaurant...</p>
+                    </div>
+                    <div class="col-2 det">
+                      <img src="images/icon_thumb.svg" alt="icon thumb">
+                      <p class="room">Rest of the room</p>
+                      <p class="room">5</p>
+                      <p class="price">IDR 860.000</p>
+                      <p class="price-disc">IDR 800.000</p>
+                      <p class="room-1">per room per night</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+            </div>
+          </div>
+      </section>
+
+      <section id="art" class="art" >
+        <article class="container pad">
+          <h1>Come On</h1>
+          <p class="desc-parag gap-parag">Look for your destination right now, because out there is very wide and the place outside is very suitable for the state of your heart right now, what are you waiting for, book your hotel now at Hotel.com.</p>
+        </article>
+        <article class="container pad gap">
+          <h1>Membership</h1>
+          <img class="member-card" src="images/pijar-card.png" alt="pijar card">
+          <p class="desc-parag">For the benefits of being a member you can get a fairly large discount, you also get exclusive services with a guide and are given directions for destinations according to your circumstances, not only that you will get free airplane tickets per month if your e-card member has reached the minimum silver level.</p>
+        </article>
+        <article class="gap">
+          <h1 class="gap-title">Favorite</h1> 
+          <div class="container-favorite">
+            <div class="favorite">
+               <div class="card">
+                 <img class="card-img" src="images/ocean-villas-at-turtle-bay.png" class="card-img-top" alt="ocean-villas-at-turtle-bay">
+                 <p class="rating">
+                   <img class="rate" src="images/star-symbol.png" alt="rating of hotel or resorts"> 
+                   <span class="rate-number">4.5</span>
+                   <img class="like" src="images/love-symbol.png" alt="like of hotel or resorts">
+                 </p>
+                 <div class="card-body">
+                   <h6 class="card-title">Ocean Villas at Turtle Bay</h6>
+                   <p class="card-loc"><img src="images/location-symbol-2.svg" alt="location hotel"> Kahuku, <span>Hawaii</span></p>
+                   <p class="card-text card-desc">With Turtle Beach reachable in 300 metres, Ocean Villas at Turtle Bay offers accommodation, a restaurant...</p>
+                   <span class="card-cost">IDR 2.100.000</span> <span class="card-value">per room per night</span>
+                 </div>
+               </div>
+ 
+             <div class="card">
+               <img class="card-img" src="images/mercure.png" class="card-img-top" alt="mercure">
+               <p class="rating">
+                 <img class="rate" src="images/star-symbol.png" alt="rating of hotel or resorts"> 
+                 <span class="rate-number">4.5</span>
+                 <img class="like" src="images/love-symbol.png" alt="like of hotel or resorts">
+               </p>
+               <div class="card-body">
+                 <h6 class="card-title">Ocean Villas at Turtle Bay</h6>
+                 <p class="card-loc"><img src="images/location-symbol-2.svg" alt="location hotel"> Kahuku, <span>Hawaii</span></p>
+                 <p class="card-text card-desc">With Turtle Beach reachable in 300 metres, Ocean Villas at Turtle Bay offers accommodation, a restaurant...</p>
+                 <span class="card-cost">IDR 2.100.000</span> <span class="card-value">per room per night</span>
+               </div>
+             </div>
+ 
+             <div class="card">
+               <img class="card-img" src="images/pavilion-water.png" class="card-img-top" alt="pavilion-water">
+               <p class="rating">
+                 <img class="rate" src="images/star-symbol.png" alt="rating of hotel or resorts"> 
+                 <span class="rate-number">4.5</span>
+                 <img class="like" src="images/love-symbol.png" alt="like of hotel or resorts">
+               </p>
+               <div class="card-body">
+                 <h6 class="card-title">Ocean Villas at Turtle Bay</h6>
+                 <p class="card-loc"><img src="images/location-symbol-2.svg" alt="location hotel"> Kahuku, <span>Hawaii</span></p>
+                 <p class="card-text card-desc">With Turtle Beach reachable in 300 metres, Ocean Villas at Turtle Bay offers accommodation, a restaurant...</p>
+                 <span class="card-cost">IDR 2.100.000</span> <span class="card-value">per room per night</span>
+               </div>
+             </div>
+ 
+             <div class="card">
+               <img class="card-img" src="images/Hotel Sentral Cawang Jakarta.png" class="card-img-top" alt="Hotel Sentral Cawang Jakarta">
+               <p class="rating">
+                 <img class="rate" src="images/star-symbol.png" alt="rating of hotel or resorts"> 
+                 <span class="rate-number">4.5</span>
+                 <img class="like" src="images/love-symbol.png" alt="like of hotel or resorts">
+               </p>
+               <div class="card-body">
+                 <h6 class="card-title">Ocean Villas at Turtle Bay</h6>
+                 <p class="card-loc"><img src="images/location-symbol-2.svg" alt="location hotel"> Kahuku, <span>Hawaii</span></p>
+                 <p class="card-text card-desc">With Turtle Beach reachable in 300 metres, Ocean Villas at Turtle Bay offers accommodation, a restaurant...</p>
+                 <span class="card-cost">IDR 2.100.000</span> <span class="card-value">per room per night</span>
+               </div>
+             </div>
+            
+             <div class="card">
+               <img class="card-img" src="images/Hotel Sentral Cawang Jakarta.png" class="card-img-top" alt="Hotel Sentral Cawang Jakarta">
+               <p class="rating">
+                 <img class="rate" src="images/star-symbol.png" alt="rating of hotel or resorts"> 
+                 <span class="rate-number">4.5</span>
+                 <img class="like" src="images/love-symbol.png" alt="like of hotel or resorts">
+               </p>
+               <div class="card-body">
+                 <h6 class="card-title">Ocean Villas at Turtle Bay</h6>
+                 <p class="card-loc"><img src="images/location-symbol-2.svg" alt="location hotel"> Kahuku, <span>Hawaii</span></p>
+                 <p class="card-text card-desc">With Turtle Beach reachable in 300 metres, Ocean Villas at Turtle Bay offers accommodation, a restaurant...</p>
+                 <span class="card-cost">IDR 2.100.000</span> <span class="card-value">per room per night</span>
+               </div>
+             </div>
+  
+             <div class="card">
+               <img class="card-img" src="images/Hotel Sentral Cawang Jakarta.png" class="card-img-top" alt="Hotel Sentral Cawang Jakarta">
+               <p class="rating">
+                 <img class="rate" src="images/star-symbol.png" alt="rating of hotel or resorts"> 
+                 <span class="rate-number">4.5</span>
+                 <img class="like" src="images/love-symbol.png" alt="like of hotel or resorts">
+               </p>
+               <div class="card-body">
+                 <h6 class="card-title">Ocean Villas at Turtle Bay</h6>
+                 <p class="card-loc"><img src="images/location-symbol-2.svg" alt="location hotel"> Kahuku, <span>Hawaii</span></p>
+                 <p class="card-text card-desc">With Turtle Beach reachable in 300 metres, Ocean Villas at Turtle Bay offers accommodation, a restaurant...</p>
+                 <span class="card-cost">IDR 2.100.000</span> <span class="card-value">per room per night</span>
+               </div>
+             </div>
+             
+             <div class="card">
+              <img class="card-img" src="images/ASTON-kartika-grogol-hotel-conference-center.png" class="card-img-top" alt="Hotel Sentral Cawang Jakarta">
+              <p class="rating">
+                <img class="rate" src="images/star-symbol.png" alt="rating of hotel or resorts"> 
+                <span class="rate-number">4.5</span>
+                <img class="like" src="images/love-symbol.png" alt="like of hotel or resorts">
+              </p>
+              <div class="card-body">
+                <h6 class="card-title">Ocean Villas at Turtle Bay</h6>
+                <p class="card-loc"><img src="images/location-symbol-2.svg" alt="location hotel"> Kahuku, <span>Hawaii</span></p>
+                <p class="card-text card-desc">With Turtle Beach reachable in 300 metres, Ocean Villas at Turtle Bay offers accommodation, a restaurant...</p>
+                <span class="card-cost">IDR 2.100.000</span> <span class="card-value">per room per night</span>
+              </div>
+            </div>
+ 
+           </div> 
+          </div>
+          
+
+          <div class="container slide-label" center>
+            <ul>
+              <li class="on-slide-label"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="container pad gap">
+          <h1 class="gap-title">Partnership</h1>
+          <img id="pijar-partner" src="images/partner.png" alt="partner pijar travel">
+          <p class="desc-parag">We have collaborated with several well-known hotels and destinations that will provide the best service for you, especially Hotel.com users. We will also expand our partnerships with hotels and other destinations around the world, for the best possible service for Hotel.com users</p>
+        </article>
+
+        
+        <article class="container pad gap">
+          <h1 class="gap-title">Why Pijar Travel</h1>
+          <div class="excell">
+              <img class="excell-img" src="images/check-symbol.svg" alt="check-symbol">
+              <p class="desc-parag">Hotel reservations are very easy and fast, hassle free, your hotel reservations are saved with one click.</p>
+          </div>
+          <div class="excell">
+            <p class="desc-parag">Many hotel choices around the world, almost 85% cooperate with hotels and villas around the world, you don't need to be afraid to travel and have a vacation.</p>
+            <img id="excell-loc" class="excell-img" src="images/location-symbol-3.svg" alt="check-symbol">
+          </div>
+          <div class="excell">
+            <img class="excell-img" src="images/calendar-symbol-2.svg" alt="check-symbol">
+            <p class="desc-parag">By using a subscription e-card, you can get discounts up to 90% * and earn Hotel.com points which can be exchanged for other promos.</p>
+          </div>
+        </article>
+      </section>
+      
+    </main>
+
+    <footer>
+      <div class="flex-container">
+        <div class="container-1 con">
+          <img class="logo-brand" src="images/logo-PTravel.svg" alt="logo pijar travel"><br>
+          <img class="google-play-app-store" src="images/get-it-on-google-play-badge.png" alt="get it on google play">
+          <img class="google-play-app-store" src="images/get-it-on-app-store-badge.png" alt="available on the app store">
+        </div>
+        <div class="container-2 con">
+          <h5>Location</h5>
+          <p>Pacific Century Place, Lantai 20, Jl. Jend. Sudirman No.Kav 52-53, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12190</p>
+        </div>
+        <div class="container-3 con">
+          <h5>About Us</h5>
+          <span>How to Book</span> <br>
+          <span>Contact Us</span> <br>
+          <span>Help Center</span> <br>
+          <span>Careers</span> <br>
+          <span>Installment</span> <br>
+          <span>About Us</span>
+        </div>
+        <div class="container-4 con">
+          <h5>Others</h5>
+          <span>Hotel,com for Corporates</span> <br>
+          <span>Hotel.com Affiliate</span> <br>
+          <span>Flash Sale</span> <br>
+          <span>Blog</span> <br>
+          <span>Privacy Policy</span> <br>
+          <span>Terms & Conditions</span> <br>
+          <span>Register Your Accommodation</span> <br>
+          <span>Register Your Experience Business</span> <br>
+          <span>Register your Restaurant</span> <br>
+          <span>Restaurant Business Blog</span> <br>
+          <span>Hotel.com Press Room  </span>
+        </div>
+      </div>
+
+      <div class="contact">
+        <img src="images/facebook-logo.svg" alt="facebook logo">
+        <img src="images/twitter-logo.svg" alt="twitter logo">
+        <img src="images/ig-logo.svg" alt="instagram logo">
+        <img src="images/tele-logo.svg" alt="telegram logo">
+        <img src="images/wa-logo.svg" alt="whatsapp logo">
+        <img src="images/yt-logo.svg" alt="youtube logo">
+      </div>
+      <p class="footer-desc">Terms & Condition | Privacy Policy | Disclaimer</p>
+      <p class="footer-desc">Copyright © 2015 PT. Hotel.com | All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="styles/js/main.js"></script>
+  </body>
+</html>
